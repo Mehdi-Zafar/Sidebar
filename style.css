@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni");
+
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Libre Bodoni", serif;
+}
+
+header {
+  background-color: lightslategrey;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px teal;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+}
+
+button {
+  float: right;
+}
+div.container {
+  clear: both;
+  width: 25%;
+  height: fit-content;
+  background-color: mistyrose;
+  border-radius: 20px;
+  display: inline-block;
+}
+div.container:hover {
+  box-shadow: 0 2px 4px gray;
+}
+
+div.smallcontainer {
+  font-size: x-large;
+  background-color: lightpink;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+ul li {
+  list-style-type: circle;
+  padding: 5px;
+  text-indent: 0;
+  padding-left: 0;
+  font-size: x-large;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  font-weight: bolder;
+}
+.hide-sidebar {
+  transform: translateX(-105%);
+  /* opacity: 1;
+    left: 0; */
+  transition: all 0.2s;
+}
+.show-sidebar {
+  transform: translateX(0);
+  transition: all 0.2s;
+  /* display: none; */
+}
+button.hambutton {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  transition: all 0.3s;
+  background-color: silver;
+  color: lightslategray;
+}
+button:hover {
+  cursor: pointer;
+}
+button.hambutton:hover {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+  color: black;
+}
+
+button.closebutton {
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+button.closebutton:hover {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+  color: black;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: -2px;
+}
